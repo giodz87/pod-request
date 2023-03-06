@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  background: #121725;
+  height: 100vh;
+}
+.info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  width: 327px;
+}
+.mob-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: hue-rotate(45deg) brightness(0.3);
+}
+h1 {
+  font-family: "Chivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #54e6af;
+  padding-top: 25px;
+  width: 327px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 62px 24px 0px 24px;
+  z-index: 1;
+}
+p {
+  font-family: "Chivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #c2cbe5;
+  width: 327px;
+}
+
+.iconn-spotify {
+  width: 55.94px;
+  height: 16.95px;
+  filter: hue-rotate(45deg) brightness(0.5);
+}
+.icon-podcast {
+  width: 45px;
+  height: 17px;
+  filter: hue-rotate(45deg) brightness(0.5);
+}
+.icon-podcasts {
+  width: 73px;
+  height: 11px;
+  filter: hue-rotate(45deg) brightness(0.5);
+}
+.casts {
+  width: 77px;
+  height: 15px;
+  filter: hue-rotate(45deg) brightness(0.5);
+}
+
+input[type="text"] {
+  padding: 9px 149px 9px 13px;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 10px;
+  border: none;
+  background: #2c344b;
+  border-radius: 28px;
+  border-style: none;
+}
+button {
+  background: #54e6af;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+  border-radius: 28px;
+  width: 326px;
+  height: 46px;
+  font-family: "Chivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #121725;
+  border: none;
+  cursor: pointer;
+}
+.conteiner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.conteiner :nth-child(1) {
+  order: var(assets);
+}
+
+.assets {
+  order: -1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5px 45px 5px;
+}
+.check {
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: none;
+  color: #fb3e3e;
+  transform: translate(61px, -5px);
+}
+.tablet-img {
+  display: none;
+}
+.dots {
+  display: none;
+}
+.desktop-img {
+  display: none;
+}
+
+/*////////////////////////////////////////////////////////
+          @media (min-width:768px) 
+//////////////////////////////////////////////////////// */
+
+@media (min-width: 768px) {
+  .mob-img {
+    display: none;
+  }
+  .tablet-img {
+    display: block;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 62px 24px 0px 39px;
+  }
+
+  .podcast {
+    padding-right: 20px;
+    width: 635px;
+    height: 509px;
+    background: #121725;
+    transform: translateY(94px);
+  }
+  h1 {
+    text-align: start;
+    font-size: 48px;
+    line-height: 56px;
+    width: auto;
+  }
+  .info {
+    font-size: 48px;
+    line-height: 56px;
+    width: auto;
+    text-align: initial;
+  }
+  .assets {
+    order: 1;
+  }
+
+  button {
+    position: absolute;
+    width: 162px;
+    height: 46px;
+    right: 290px;
+    top: 20px;
+  }
+  p {
+    width: 445px;
+    text-align: start;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .check {
+    transform: translateX(13px);
+  }
+  .conteiner {
+    padding-top: 20px;
+  }
+  .assets {
+    padding: 60px 48px 0px 0px;
+  }
+  .iconn-spotify {
+    width: 95.9px;
+    height: 28.91px;
+  }
+  .icon-podcast {
+    width: 78px;
+    height: 29px;
+  }
+  .icon-podcasts {
+    width: 125px;
+    height: 18px;
+  }
+  .casts {
+    width: 129px;
+    height: 26px;
+  }
+  .dots {
+    display: block;
+    padding-top: 132px;
+  }
+}
+/*////////////////////////////////////////////////////////
+          @media (min-width:1210px) 
+//////////////////////////////////////////////////////// */
+@media (min-width: 1210px) {
+  .tablet-img {
+    display: none;
+  }
+  .desktop-img {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  section {
+    padding: 50px 0px 0px 132px;
+  }
+  .podcast {
+    width: 723px;
+    height: 509px;
+    transform: translateY(137px);
+  }
+  h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  .info {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  .dots {
+    position: absolute;
+    right: 0;
+    transform: translateY(360px);
+  }
+}
