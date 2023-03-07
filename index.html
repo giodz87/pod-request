@@ -28,19 +28,21 @@
           Publish your podcasts
           <div class="info">everywhere.</div>
         </h1>
-        <p>
+        <p class="about">
           Upload your audio to Pod with a single click. We’ll then distribute
           your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
           and more!
         </p>
 
         <div class="conteiner">
-          <label for="text">
-            <input type="text" placeholder="Email address" />
-          </label>
-          <strong class="check">Oops! Please check your email</strong>
-          <button>Request Access</button>
+          <form id="form" action="/" method="post">
+            <div class="input-control">
+              <input id="email" type="text" placeholder="Email address" />
+              <div class="error check"></div>
+            </div>
 
+            <button type="submit" value="SUBMIT">Request Access</button>
+          </form>
           <div class="assets">
             <img class="iconn-spotify" src="./desktop/spotify.svg" alt="" />
             <img

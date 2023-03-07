@@ -97,7 +97,10 @@ input[type="text"] {
   background: #2c344b;
   border-radius: 28px;
   border-style: none;
+
+  outline: none;
 }
+
 button {
   background: #54e6af;
   box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
@@ -130,15 +133,16 @@ button {
   justify-content: space-between;
   padding: 20px 5px 45px 5px;
 }
+
 .check {
-  font-family: "Chivo";
+  font-family: "Chivo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  display: none;
+
   color: #fb3e3e;
-  transform: translate(61px, -5px);
+  transform: translate(112px, -5px);
 }
 .tablet-img {
   display: none;
